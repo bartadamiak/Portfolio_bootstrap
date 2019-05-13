@@ -2,9 +2,7 @@
     background: url('../images/code.jpg');
     background-size: contain;
 }
-.box {
-    margin: 20px 0;
-}
+
 .box img {
     cursor: pointer;
 }
