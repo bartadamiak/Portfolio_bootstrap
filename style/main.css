@@ -3,14 +3,29 @@
     background-size: contain;
 }
 
+.hidden {
+    display: none;
+}
+
 .box {
     height: 100%;
 }
 
 .box img {
     cursor: pointer;
-    
+    position: relative;
 }
+
+.links {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    padding: 0 20%;
+  
+}
+
+
 
 .box img:hover {
     opacity: 0.9;
@@ -44,7 +59,7 @@
 
 @keyframes large {
     0% {width: 70%; height: 90%}
-    50% {width: 75%; height: 95%}
+    50% {width: 71%; height: 91%}
     100% {width: 70%; height: 90%}
 
 }

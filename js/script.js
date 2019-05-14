@@ -17,3 +17,12 @@ circle.addEventListener('mouseleave', function(){
 
     }
 })
+
+const images = document.querySelectorAll('.box img');
+
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('hidden');
+    })
+}
+
