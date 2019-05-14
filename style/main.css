@@ -3,7 +3,49 @@
     background-size: contain;
 }
 
+.box {
+    height: 100%;
+}
+
 .box img {
     cursor: pointer;
+    
+}
+
+.box img:hover {
+    opacity: 0.9;
+    box-shadow: 1px 1px 8px #888888
+}
+
+/* .box p {
+    font-family: 'Akronim', cursive;
+} */
+
+.circle {
+    width: 70%;
+    height: 90%;
+    border: 3px solid lightgray;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    animation-name: large;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes large {
+    0% {width: 70%; height: 90%}
+    50% {width: 75%; height: 95%}
+    100% {width: 70%; height: 90%}
+
 }
 
