@@ -1,7 +1,9 @@
 body {
-    background: url('../images/code.jpg');
+    background: url('../images/black_linen_v2.png');
     background-size: cover;
-    padding-bottom: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -33,9 +35,9 @@ body {
     top: 35%;
     left: 0;
     padding: 0 20%;
+    background: url('../images/black_linen_v2.png')
     
 }
-
 
 
 .box img:hover {
@@ -43,39 +45,14 @@ body {
     box-shadow: 1px 1px 8px #888888
 }
 
-/* .box p {
-    font-family: 'Akronim', cursive;
-} */
-
-.circle {
-    width: 70%;
-    height: 90%;
-    border: 3px solid lightgray;
-    box-shadow: 1px 1px 8px #888888;
-    border-radius: 100%;
-    margin: auto;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    animation-name: large;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
+.second-section {
+    flex: 1 0 auto;
 }
 
-@keyframes large {
-    0% {width: 70%; height: 90%}
-    50% {width: 71%; height: 91%}
-    100% {width: 70%; height: 90%}
-
+.footer {
+    flex-shrink: 0;
+    
 }
-
-
 
 .footer-text a {
     text-decoration: none;
