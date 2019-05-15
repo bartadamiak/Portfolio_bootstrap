@@ -1,6 +1,10 @@
 const circle = document.querySelector('.circle');
 const logos = document.querySelectorAll('.circle i');
-console.log(logos)
+const images = document.querySelectorAll('.box img');
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const firstSection = document.querySelector('.first-section');
+const secondSection = document.querySelector('.second-section')
 
 circle.addEventListener('mouseenter', function(){
     this.classList.toggle('bg-light');
@@ -18,7 +22,7 @@ circle.addEventListener('mouseleave', function(){
     }
 })
 
-const images = document.querySelectorAll('.box img');
+
 
 for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', function() {
@@ -26,3 +30,13 @@ for (let i = 0; i < images.length; i++) {
     })
 }
 
+btn1.addEventListener('click', function(){
+    firstSection.classList.toggle('hidden');
+    secondSection.classList.toggle('hidden')
+
+});
+
+btn2.addEventListener('click', function(){
+    firstSection.classList.toggle('hidden');
+    secondSection.classList.toggle('hidden')
+})

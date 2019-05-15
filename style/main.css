@@ -1,7 +1,16 @@
-.main {
+body {
     background: url('../images/code.jpg');
-    background-size: contain;
+    background-size: cover;
+    padding-bottom: 0;
 }
+
+.main {
+    /* background: url('../images/code.jpg'); */
+    background-size: contain;
+
+}
+
+
 
 .hidden {
     display: none;
@@ -14,6 +23,8 @@
 .box img {
     cursor: pointer;
     position: relative;
+    filter: brightness(70%);
+    transition: 0.3s;
 }
 
 .links {
@@ -22,13 +33,13 @@
     top: 35%;
     left: 0;
     padding: 0 20%;
-  
+    
 }
 
 
 
 .box img:hover {
-    opacity: 0.9;
+    filter: brightness(100%);
     box-shadow: 1px 1px 8px #888888
 }
 
@@ -64,3 +75,8 @@
 
 }
 
+
+
+.footer-text a {
+    text-decoration: none;
+}
